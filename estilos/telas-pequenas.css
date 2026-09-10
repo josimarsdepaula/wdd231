@@ -1,0 +1,240 @@
+:root {
+    --azul-principal: #0B3D91;
+    --azul-secundario: #1558C0;
+    --azul-claro: #EAF2FF;
+    --fundo: #F7F9FC;
+    --texto: #172033;
+    --branco: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    color: var(--texto);
+    background: var(--fundo);
+}
+
+header {
+    background: var(--azul-principal);
+    color: var(--branco);
+}
+
+.cabecalho {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 12px;
+}
+
+.cabecalho img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.cabecalho span {
+    flex: 1;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#menu {
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--branco);
+    border-radius: 5px;
+    background: var(--azul-principal);
+    color: var(--branco);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background: #082F70;
+}
+
+nav.aberto {
+    display: flex;
+}
+
+nav a {
+    padding: 15px 20px;
+    color: var(--branco);
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #1E4F9B;
+}
+
+nav a:hover,
+nav a.ativo {
+    background: var(--azul-secundario);
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px 25px;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 1.8rem;
+    color: var(--azul-principal);
+}
+
+.introducao {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+section {
+    border: 1px solid #C8D6EA;
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--branco);
+    box-shadow: 0 2px 8px rgba(11, 61, 145, 0.08);
+}
+
+section h2 {
+    margin: 0;
+    padding: 12px;
+    background: var(--azul-principal);
+    color: var(--branco);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.conteudo {
+    min-height: 220px;
+    padding: 20px;
+    background: var(--azul-claro);
+}
+
+.conteudo p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.foto {
+    padding: 20px;
+    background: var(--azul-claro);
+    text-align: center;
+}
+
+.foto img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: 280px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 4px solid var(--branco);
+    box-shadow: 0 2px 8px rgba(11, 61, 145, 0.15);
+}
+
+.certificado {
+    margin-top: 15px;
+}
+
+.filtros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 12px;
+    background: var(--branco);
+}
+
+.filtros button {
+    min-height: 38px;
+    border: 1px solid #7FA6D6;
+    border-radius: 5px;
+    background: var(--azul-claro);
+    color: var(--azul-principal);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.filtros button:hover,
+.filtros button.ativo-filtro {
+    background: var(--azul-principal);
+    color: var(--branco);
+}
+
+#cursos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 0 12px;
+}
+
+.curso {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #9BB6D9;
+    border-radius: 5px;
+    background: var(--azul-claro);
+    color: #173A68;
+    font-weight: 700;
+    text-align: center;
+}
+
+.curso.completo {
+    background: var(--azul-secundario);
+    color: var(--branco);
+    border-color: var(--azul-secundario);
+}
+
+#creditos {
+    margin: 12px;
+    color: var(--azul-principal);
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+footer {
+    padding: 20px 15px;
+    background: var(--azul-principal);
+    color: var(--branco);
+    text-align: center;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 15px;
+}
+
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    color: var(--branco);
+}
+
+.redes-sociais svg {
+    width: 30px;
+    height: 30px;
+}
+
+footer p {
+    margin: 7px 0;
+    font-size: .85rem;
+}

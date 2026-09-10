@@ -1,0 +1,110 @@
+@media screen and (min-width: 32.5rem) {
+
+    .cabecalho {
+        min-height: 90px;
+        padding: 10px 20px;
+    }
+
+    .cabecalho img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .cabecalho span {
+        font-size: 1.35rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background: #082F70;
+        border-top: 1px solid #1E4F9B;
+    }
+
+    nav a {
+        flex: 1;
+        padding: 14px 10px;
+        border-bottom: none;
+        border-right: 1px solid #1E4F9B;
+    }
+
+    nav a:last-child {
+        border-right: none;
+    }
+
+    nav a:hover,
+    nav a.ativo {
+        background: var(--azul-secundario);
+    }
+
+    main {
+        padding: 0 20px 30px;
+    }
+
+    h1 {
+        margin: 20px 0 15px;
+        font-size: 2rem;
+    }
+
+    .introducao {
+        grid-template-columns: 1.4fr 1fr;
+        gap: 18px;
+    }
+
+    .conteudo {
+        min-height: 275px;
+        display: flex;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .conteudo p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .foto {
+        min-height: 275px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .foto img {
+        width: 220px;
+        height: 230px;
+    }
+
+    .certificado {
+        margin-top: 18px;
+    }
+
+    .filtros {
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    #cursos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        padding: 0 20px;
+    }
+
+    .curso {
+        min-height: 55px;
+    }
+
+    #creditos {
+        margin: 15px 20px;
+    }
+
+    footer {
+        padding: 22px 20px;
+    }
+}
