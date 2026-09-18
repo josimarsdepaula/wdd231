@@ -1,0 +1,65 @@
+[
+    {
+        "nome": "Curitiba Tech",
+        "endereco": "Av. Sete de Setembro, 4215 - Batel, Curitiba - PR",
+        "telefone": "(41) 3000-1001",
+        "site": "https://www.curitibatech.com.br",
+        "imagem": "curitiba-tech.svg",
+        "nivel": 3,
+        "descricao": "Empresa de tecnologia especializada em soluções digitais para empresas."
+    },
+    {
+        "nome": "Sul Engenharia",
+        "endereco": "Rua Brigadeiro Franco, 2150 - Centro, Curitiba - PR",
+        "telefone": "(41) 3000-1002",
+        "site": "https://www.sulengenharia.com.br",
+        "imagem": "sul-engenharia.svg",
+        "nivel": 3,
+        "descricao": "Empresa de engenharia e projetos para construção civil."
+    },
+    {
+        "nome": "Paraná Móveis",
+        "endereco": "Rua João Negrão, 1180 - Rebouças, Curitiba - PR",
+        "telefone": "(41) 3000-1003",
+        "site": "https://www.paranamoveis.com.br",
+        "imagem": "parana-moveis.svg",
+        "nivel": 2,
+        "descricao": "Comércio de móveis residenciais e corporativos."
+    },
+    {
+        "nome": "Café Curitiba",
+        "endereco": "Rua Comendador Araújo, 980 - Batel, Curitiba - PR",
+        "telefone": "(41) 3000-1004",
+        "site": "https://www.cafecuritiba.com.br",
+        "imagem": "cafe-curitiba.svg",
+        "nivel": 2,
+        "descricao": "Cafeteria com produtos artesanais e espaço para reuniões."
+    },
+    {
+        "nome": "Mercado Paraná",
+        "endereco": "Av. República Argentina, 1560 - Água Verde, Curitiba - PR",
+        "telefone": "(41) 3000-1005",
+        "site": "https://www.mercadoparana.com.br",
+        "imagem": "mercado-parana.svg",
+        "nivel": 1,
+        "descricao": "Comércio local de alimentos e produtos para o dia a dia."
+    },
+    {
+        "nome": "Studio Vida",
+        "endereco": "Rua Francisco Rocha, 920 - Batel, Curitiba - PR",
+        "telefone": "(41) 3000-1006",
+        "site": "https://www.studiovida.com.br",
+        "imagem": "studio-vida.webp",
+        "nivel": 1,
+        "descricao": "Espaço especializado em bem-estar, saúde e qualidade de vida."
+    },
+    {
+        "nome": "Logística Sul",
+        "endereco": "Rua Eduardo Sprada, 6400 - Campo Comprido, Curitiba - PR",
+        "telefone": "(41) 3000-1007",
+        "site": "https://www.logisticasul.com.br",
+        "imagem": "logistica-sul.webp",
+        "nivel": 3,
+        "descricao": "Soluções de transporte e logística para empresas do Paraná."
+    }
+]

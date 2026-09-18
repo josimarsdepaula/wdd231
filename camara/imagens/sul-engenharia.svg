@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="#EAF2FF"/>
+
+    <path d="M150 190L250 65L350 190H150Z" fill="#0B3D91"/>
+    
+    <rect x="185" y="145" width="130" height="45" fill="#FFFFFF"/>
+    
+    <rect x="210" y="155" width="25" height="35" fill="#1558C0"/>
+    <rect x="250" y="155" width="25" height="35" fill="#1558C0"/>
+    <rect x="290" y="155" width="25" height="35" fill="#1558C0"/>
+
+    <path d="M135 195H365"
+        stroke="#1558C0"
+        stroke-width="8"/>
+
+    <text x="250" y="230"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="30"
+        font-weight="bold"
+        fill="#0B3D91">
+        Sul Engenharia
+    </text>
+
+    <text x="250" y="255"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="16"
+        fill="#172033">
+        Engenharia e projetos
+    </text>
+</svg>

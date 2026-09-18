@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="#EAF2FF"/>
+
+    <circle cx="250" cy="120" r="65" fill="#0B3D91"/>
+
+    <path d="M210 95h80v55h-80z" fill="#FFFFFF"/>
+
+    <path d="M210 105h80"
+        stroke="#1558C0"
+        stroke-width="6"/>
+
+    <path d="M225 115v25M245 115v25M265 115v25"
+        stroke="#0B3D91"
+        stroke-width="5"/>
+
+    <path d="M292 105c18 0 18 30 0 30"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="7"/>
+
+    <text x="250" y="220"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="32"
+        font-weight="bold"
+        fill="#0B3D91">
+        Café Curitiba
+    </text>
+
+    <text x="250" y="248"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="16"
+        fill="#172033">
+        Café e espaço para reuniões
+    </text>
+</svg>

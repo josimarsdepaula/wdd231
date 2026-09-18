@@ -1,0 +1,112 @@
+@media screen and (min-width: 32.5rem) {
+
+    /* CABEÇALHO */
+
+    .cabecalho {
+        min-height: 95px;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 12px 20px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .nome-site strong {
+        font-size: 1.4rem;
+    }
+
+    .nome-site span {
+        font-size: 0.95rem;
+    }
+
+    /* MENU */
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-top: 1px solid #1E4F9B;
+    }
+
+    nav a {
+        min-width: 150px;
+        padding: 15px 20px;
+        border-bottom: none;
+        border-right: 1px solid #1E4F9B;
+    }
+
+    nav a:last-child {
+        border-right: none;
+    }
+
+    /* CONTEÚDO */
+
+    main {
+        padding: 30px 20px 45px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+    }
+
+    /* BOTÕES */
+
+    .controles {
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    /* GRADE DOS MEMBROS */
+
+    #membros {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .membro {
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* LISTA DOS MEMBROS */
+
+    #membros.lista {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .lista .membro {
+        grid-template-columns: 2fr 2fr 1.5fr 1fr;
+        align-items: center;
+        padding: 12px 18px;
+    }
+
+    .lista .membro h2 {
+        font-size: 1rem;
+    }
+
+    /* RODAPÉ */
+
+    .rodape-conteudo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        align-items: start;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="#EAF2FF"/>
+    
+    <circle cx="250" cy="105" r="55" fill="#0B3D91"/>
+    
+    <path d="M220 135h60v55h-60z" fill="#FFFFFF"/>
+    <path d="M210 135h80v10h-80z" fill="#1558C0"/>
+    
+    <path d="M230 150v30M250 150v30M270 150v30"
+        stroke="#0B3D91"
+        stroke-width="6"/>
+    
+    <text x="250" y="230"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="32"
+        font-weight="bold"
+        fill="#0B3D91">
+        Curitiba Tech
+    </text>
+    
+    <text x="250" y="255"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="16"
+        fill="#172033">
+        Tecnologia e inovação
+    </text>
+</svg>

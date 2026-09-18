@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="#EAF2FF"/>
+
+    <rect x="140" y="105" width="220" height="90" rx="6" fill="#0B3D91"/>
+
+    <path d="M130 105H370L350 75H150L130 105Z"
+        fill="#1558C0"/>
+
+    <path d="M150 75H350"
+        stroke="#FFFFFF"
+        stroke-width="6"/>
+
+    <rect x="165" y="125" width="55" height="45" fill="#FFFFFF"/>
+    <rect x="230" y="125" width="55" height="45" fill="#FFFFFF"/>
+    <rect x="295" y="125" width="45" height="45" fill="#FFFFFF"/>
+
+    <path d="M150 195H350"
+        stroke="#1558C0"
+        stroke-width="10"/>
+
+    <text x="250" y="230"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="32"
+        font-weight="bold"
+        fill="#0B3D91">
+        Mercado Paraná
+    </text>
+
+    <text x="250" y="255"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="16"
+        fill="#172033">
+        Comércio local
+    </text>
+</svg>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Diretório da Câmara de Comércio de Curitiba com informações sobre empresas e negócios locais.">
+
+    <meta name="author" content="Josimar de Paula">
+
+    <!--------------------------- Open Graph ------------------------------>
+    <meta property="og:title" content="Câmara de Comércio de Curitiba">
+    <meta property="og:description" content="Conheça empresas e negócios associados à Câmara de Comércio de Curitiba.">
+    <meta property="og:image" content="https://seuusuario.github.io/wdd231/camara/imagens/logo.svg">
+    <meta property="og:url" content="https://seuusuario.github.io/wdd231/camara/diretorio.html">
+
+    <title>Câmara de Comércio de Curitiba | Diretório</title>
+
+    <!----------------------------- Favicon ------------------------------>
+    <link rel="icon" href="imagens/favicon.svg">
+
+    <!------------------------- Google Fonts ----------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <!------------------------- JavaScript ------------------------------>
+    <script src="scripts/diretorio.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="cabecalho">
+
+            <a href="diretorio.html" class="logo">
+                <img src="imagens/logo.svg" alt="Logo da Câmara de Comércio de Curitiba">
+            </a>
+
+            <div class="nome-site">
+                <strong>Câmara de Comércio</strong>
+                <span>Curitiba - Paraná</span>
+            </div>
+
+            <button id="menu" aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+
+        <nav id="navegacao">
+            <a href="index.html">Início</a>
+            <a href="diretorio.html" class="ativo">Diretório</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Diretório da Câmara de Comércio</h1>
+
+        <div class="controles">
+            <button id="grade" class="ativo-controle">
+                Grade
+            </button>
+
+            <button id="lista">
+                Lista
+            </button>
+        </div>
+
+        <section id="membros" class="grade">
+
+            <!-- Os membros serão carregados pelo JavaScript -->
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="rodape-conteudo">
+
+            <div>
+                <h2>Câmara de Comércio de Curitiba</h2>
+                <p>Curitiba, Paraná - Brasil</p>
+                <p>Conectando empresas e fortalecendo negócios locais.</p>
+            </div>
+
+            <div class="contato">
+                <p>contato@camaracuritiba.com.br</p>
+                <p>(41) 3000-0000</p>
+                <p>Curitiba - PR</p>
+            </div>
+
+        </div>
+
+        <div class="redes-sociais">
+
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                Facebook
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                LinkedIn
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                Instagram
+            </a>
+
+        </div>
+
+        <p>
+            © <span id="anoAtual"></span> Câmara de Comércio de Curitiba
+        </p>
+
+        <p>
+            Josimar de Paula | WDD 231
+        </p>
+
+        <p id="ultimaModificacao"></p>
+
+    </footer>
+
+</body>
+
+</html>
