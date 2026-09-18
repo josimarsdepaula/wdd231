@@ -7,6 +7,10 @@
     --branco: #FFFFFF;
     --cinza: #667085;
     --borda: #D5DEEA;
+    --azul-escuro: #082F70;
+    --azul-borda-menu: #1E4F9B;
+    --transparente: #FFFFFF00;
+    --sombra-card: #0B3D9114;
 }
 
 body {
@@ -58,7 +62,7 @@ header {
     height: 44px;
     border: 1px solid var(--branco);
     border-radius: 5px;
-    background: transparent;
+    background: var(--transparente);
     color: var(--branco);
     font-size: 1.5rem;
     cursor: pointer;
@@ -67,7 +71,7 @@ header {
 nav {
     display: none;
     flex-direction: column;
-    background: #082F70;
+    background: var(--azul-escuro);
 }
 
 nav.aberto {
@@ -79,7 +83,7 @@ nav a {
     color: var(--branco);
     text-decoration: none;
     text-align: center;
-    border-bottom: 1px solid #1E4F9B;
+    border-bottom: 1px solid var(--azul-borda-menu);
 }
 
 nav a:hover,
@@ -141,7 +145,7 @@ h1 {
     border: 1px solid var(--borda);
     border-radius: 8px;
     padding: 18px;
-    box-shadow: 0 2px 8px rgba(11, 61, 145, 0.08);
+    box-shadow: 0 2px 8px var(--sombra-card);
     text-align: center;
 }
 
@@ -259,3 +263,4 @@ footer p {
 .redes-sociais a:hover {
     text-decoration: underline;
 }
+

@@ -26,5 +26,5 @@ select {
 }
 
 a {
-    color: inherit;
+    color: var(--azul-secundario);
 }
