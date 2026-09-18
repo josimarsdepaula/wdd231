@@ -129,7 +129,7 @@ h1 {
 
 /* ÁREA DOS MEMBROS */
 
-# membros {
+#membros {
     display: grid;
     gap: 15px;
 }
@@ -188,7 +188,7 @@ h1 {
 
 /* LISTA */
 
-# membros.lista {
+#membros.lista {
     display: flex;
     flex-direction: column;
     gap: 0;
