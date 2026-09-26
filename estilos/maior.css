@@ -52,7 +52,7 @@
     }
 
     .introducao {
-        grid-template-columns: 1.4fr 1fr;
+        grid-template-columns: minmax(0, 1fr);
         gap: 18px;
     }
 
@@ -106,5 +106,11 @@
 
     footer {
         padding: 22px 20px;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .introducao {
+        grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
     }
 }

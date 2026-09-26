@@ -36,7 +36,8 @@
     }
 
     nav a {
-        min-width: 150px;
+        flex: 0 1 150px;
+        min-width: 0;
         padding: 15px 20px;
         border-bottom: none;
         border-right: 1px solid var(--azul-borda-menu);
@@ -67,7 +68,7 @@
     /* GRADE DOS MEMBROS */
 
     #membros {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 20px;
     }
 
@@ -87,7 +88,7 @@
     }
 
     .lista .membro {
-        grid-template-columns: 2fr 2fr 1.5fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         align-items: center;
         padding: 12px 18px;
     }
@@ -100,7 +101,7 @@
 
     .rodape-conteudo {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         text-align: left;
         align-items: start;
     }
@@ -109,4 +110,55 @@
         padding: 30px 20px;
     }
 
+    /* Página Inicial */
+
+    #previsao {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    #empresas-destaque {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .empresa-destaque {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .hero {
+        display: grid;
+    }
+
+    .hero img,
+    .hero-conteudo {
+        grid-area: 1 / 1;
+    }
+
+    .hero img {
+        height: 100%;
+        min-height: 450px;
+    }
+
+    .hero-conteudo {
+        align-self: end;
+        z-index: 1;
+        width: calc(100% - 4rem);
+        max-width: 500px;
+        margin: 2rem;
+        padding: 1.5rem;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    #membros,
+    #empresas-destaque {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .lista .membro {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 20px;
+    }
 }

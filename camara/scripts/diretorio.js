@@ -14,6 +14,7 @@ menu.addEventListener("click", () => {
     const aberto = navegacao.classList.contains("aberto");
 
     menu.setAttribute("aria-expanded", aberto);
+    menu.setAttribute("aria-label", aberto ? "Fechar menu" : "Abrir menu");
     menu.textContent = aberto ? "✕" : "☰";
 });
 

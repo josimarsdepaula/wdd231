@@ -8,10 +8,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    min-width: 320px;
-}
-
 img {
     max-width: 100%;
     height: auto;

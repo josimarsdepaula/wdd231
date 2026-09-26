@@ -18,6 +18,7 @@ body {
     color: var(--texto);
     background: var(--fundo);
     line-height: 1.5;
+    overflow-wrap: anywhere;
 }
 
 /* CABEÇALHO */
@@ -28,11 +29,16 @@ header {
 }
 
 .cabecalho {
+    width: 100%;
     min-height: 80px;
     display: flex;
     align-items: center;
     gap: 12px;
     padding: 10px 15px;
+}
+
+.logo {
+    flex-shrink: 0;
 }
 
 .logo img {
@@ -42,6 +48,7 @@ header {
 }
 
 .nome-site {
+    min-width: 0;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -58,6 +65,7 @@ header {
 /* MENU */
 
 #menu {
+    flex-shrink: 0;
     width: 44px;
     height: 44px;
     border: 1px solid var(--branco);
@@ -110,6 +118,7 @@ h1 {
 
 .controles {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
 }
@@ -135,12 +144,14 @@ h1 {
 
 #membros {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: 15px;
 }
 
 /* CARTÃO */
 
 .membro {
+    min-width: 0;
     background: var(--branco);
     border: 1px solid var(--borda);
     border-radius: 8px;
@@ -200,7 +211,8 @@ h1 {
 
 .lista .membro {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
     gap: 5px;
     border-radius: 0;
     box-shadow: none;
@@ -249,6 +261,7 @@ footer p {
 
 .redes-sociais {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-bottom: 15px;
@@ -264,3 +277,96 @@ footer p {
     text-decoration: underline;
 }
 
+/* Página inicial */
+
+.hero {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--azul-claro);
+}
+
+.hero img {
+    width: 100%;
+    height: clamp(180px, 45vw, 300px);
+    object-fit: cover;
+}
+
+.hero-conteudo {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem 1rem;
+    background: var(--azul-claro);
+}
+
+.hero-conteudo h1 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    line-height: 1.3;
+    overflow-wrap: break-word;
+}
+
+.botao-cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background: var(--azul-principal);
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.eventos,
+.clima,
+.destaques {
+    min-width: 0;
+    margin-top: 24px;
+}
+
+.eventos h2,
+.clima h2,
+.destaques h2 {
+    margin-bottom: 12px;
+    color: var(--azul-principal);
+}
+
+#previsao,
+#empresas-destaque {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+}
+
+#previsao:not(:empty) {
+    margin-top: 16px;
+}
+
+.evento,
+#clima-atual,
+.dia-previsao,
+.empresa-destaque {
+    min-width: 0;
+    padding: 18px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    background: var(--branco);
+    box-shadow: 0 2px 8px var(--sombra-card);
+}
+
+.empresa-destaque img {
+    width: 140px;
+    height: 90px;
+    object-fit: contain;
+    margin: 0 auto 15px;
+}
+
+.empresa-destaque h3,
+.dia-previsao h3 {
+    margin-bottom: 8px;
+    color: var(--azul-principal);
+}
+
+.empresa-destaque p {
+    margin: 8px 0;
+}
