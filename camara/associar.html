@@ -1,61 +1,235 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conheça a proposta de associação à Câmara de Comércio de Curitiba.">
+
+    <meta name="description" content="Associe sua empresa à Câmara de Comércio de Curitiba.">
     <meta name="author" content="Josimar de Paula">
+
     <meta property="og:title" content="Câmara de Comércio de Curitiba | Associe-se">
-    <meta property="og:description" content="Conheça a proposta de associação à Câmara de Comércio de Curitiba.">
+    <meta property="og:description" content="Associe sua empresa à Câmara de Comércio de Curitiba.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://josimarsdepaula.github.io/wdd231/camara/imagens/hero.webp">
     <meta property="og:url" content="https://josimarsdepaula.github.io/wdd231/camara/associar.html">
+
     <title>Câmara de Comércio de Curitiba | Associe-se</title>
+
     <link rel="icon" href="imagens/favicon.svg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="estilos/reset.css">
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
     <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <link rel="stylesheet" href="estilos/associacao.css">
     <script src="scripts/paginas.js" defer></script>
+    <script src="scripts/associacao.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="cabecalho">
-            <a href="index.html" class="logo"><img src="imagens/logo.svg" alt="Logo da Câmara de Comércio de Curitiba"></a>
-            <div class="nome-site"><strong>Câmara de Comércio</strong><span>Curitiba - Paraná</span></div>
-            <button id="menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="navegacao">☰</button>
+            <a href="index.html" class="logo">
+                <img src="imagens/logo.svg" alt="Logo da Câmara de Comércio de Curitiba">
+            </a>
+
+            <div class="nome-site">
+                <strong>Câmara de Comércio</strong>
+                <span>Curitiba - Paraná</span>
+            </div>
+
+            <button id="menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="navegacao">
+                ☰
+            </button>
         </div>
+
         <nav id="navegacao">
             <a href="index.html">Início</a>
             <a href="diretorio.html">Diretório</a>
             <a href="sobre.html">Sobre</a>
-            <a href="associacao.html" class="ativo" aria-current="page">Associe-se</a>
+            <a href="associar.html" class="ativo" aria-current="page">Associe-se</a>
         </nav>
     </header>
+
     <main>
         <h1>Associe-se à Câmara</h1>
-        <section class="evento">
-            <h2>Faça parte da nossa comunidade</h2>
-            <p>Conecte sua empresa a outros negócios de Curitiba e acompanhe oportunidades de encontros e parcerias.</p>
-            <p>Preencha o formulário para escolher seu nível de associação e fazer parte da Câmara.</p>
-            <a class="botao-cta" href="associacao.html">Preencher formulário</a>
-        </section>
+
+        <div class="conteudo-associacao">
+
+            <section class="formulario-associacao">
+                <h2>Formulário de Associação</h2>
+                <p>Os campos marcados com * são obrigatórios.</p>
+
+                <form method="get" action="agradecimento.html">
+
+                    <label>
+                        Nome *
+                        <input type="text" name="nome" title="Digite seu nome" autocomplete="given-name" required>
+                    </label>
+
+                    <label>
+                        Sobrenome *
+                        <input type="text" name="sobrenome" title="Digite seu sobrenome" autocomplete="family-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Cargo na organização (opcional)
+                        <input type="text" name="cargo" title="Digite seu cargo na organização"
+                            autocomplete="organization-title" pattern="[\p{L} \-]{7,}" aria-describedby="ajuda-cargo">
+                        <small id="ajuda-cargo">Opcional: no mínimo 7 caracteres, apenas letras, espaços e hifens.</small>
+                    </label>
+
+                    <label>
+                        E-mail *
+                        <input type="email" name="email" title="Digite seu endereço de e-mail" autocomplete="email"
+                            placeholder="exemplo@email.com" required>
+                    </label>
+
+                    <label>
+                        Número de celular *
+                        <input type="tel" name="telefone" title="Digite seu número de celular" autocomplete="tel"
+                            required>
+                    </label>
+
+                    <label>
+                        Nome da empresa ou organização *
+                        <input type="text" name="organizacao" title="Digite o nome da empresa ou organização"
+                            autocomplete="organization" required>
+                    </label>
+
+                    <label>
+                        Nível de associação *
+                        <select name="nivel" title="Selecione o nível de associação" required>
+                            <option value="" disabled selected>
+                                Selecione uma opção
+                            </option>
+                            <option value="np">Associação NP</option>
+                            <option value="bronze">Associação Bronze</option>
+                            <option value="silver">Associação Prata</option>
+                            <option value="gold">Associação Ouro</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Descrição da empresa ou organização (opcional)
+                        <textarea name="descricao" title="Descreva a atividade da empresa ou organização"
+                            rows="5"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <button type="submit">
+                        Enviar Associação
+                    </button>
+                </form>
+            </section>
+
+            <section class="niveis-associacao">
+                <h2>Níveis de Associação</h2>
+
+                <div class="cartao-nivel">
+                    <h3>Associação NP</h3>
+                    <p>Para organizações sem fins lucrativos.</p>
+                    <button type="button" data-modal="modal-np">
+                        Saiba mais
+                    </button>
+                </div>
+
+                <div class="cartao-nivel">
+                    <h3>Associação Bronze</h3>
+                    <p>Benefícios básicos para sua empresa.</p>
+                    <button type="button" data-modal="modal-bronze">
+                        Saiba mais
+                    </button>
+                </div>
+
+                <div class="cartao-nivel">
+                    <h3>Associação Prata</h3>
+                    <p>Mais benefícios e oportunidades.</p>
+                    <button type="button" data-modal="modal-prata">
+                        Saiba mais
+                    </button>
+                </div>
+
+                <div class="cartao-nivel">
+                    <h3>Associação Ouro</h3>
+                    <p>Todos os benefícios disponíveis.</p>
+                    <button type="button" data-modal="modal-ouro">
+                        Saiba mais
+                    </button>
+                </div>
+            </section>
+
+        </div>
     </main>
+
+    <dialog id="modal-np" aria-labelledby="titulo-np">
+        <h2 id="titulo-np">Associação NP</h2>
+        <p>Gratuita — sem taxa de associação.</p>
+        <p>Indicada para organizações sem fins lucrativos.</p>
+        <ul>
+            <li>Presença no diretório de organizações associadas.</li>
+            <li>Participação em encontros comunitários e oportunidades de networking.</li>
+            <li>Recebimento de notícias e oportunidades da Câmara.</li>
+        </ul>
+        <button type="button" class="fechar-modal">Fechar</button>
+    </dialog>
+
+    <dialog id="modal-bronze" aria-labelledby="titulo-bronze">
+        <h2 id="titulo-bronze">Associação Bronze</h2>
+        <p>Taxa: R$ 300 por ano.</p>
+        <p>Inclui os benefícios da Associação NP e participação em eventos da Câmara.</p>
+        <p>Acesso a treinamentos e oportunidades de networking.</p>
+        <button type="button" class="fechar-modal">Fechar</button>
+    </dialog>
+
+    <dialog id="modal-prata" aria-labelledby="titulo-prata">
+        <h2 id="titulo-prata">Associação Prata</h2>
+        <p>Taxa: R$ 600 por ano.</p>
+        <p>Inclui os benefícios da Associação Bronze.</p>
+        <p>Oferece descontos em eventos e oportunidades de publicidade.</p>
+        <button type="button" class="fechar-modal">Fechar</button>
+    </dialog>
+
+    <dialog id="modal-ouro" aria-labelledby="titulo-ouro">
+        <h2 id="titulo-ouro">Associação Ouro</h2>
+        <p>Taxa: R$ 1.200 por ano.</p>
+        <p>Inclui os benefícios dos níveis anteriores.</p>
+        <p>Oferece maior destaque para a empresa e benefícios especiais.</p>
+        <button type="button" class="fechar-modal">Fechar</button>
+    </dialog>
+
     <footer>
         <div class="rodape-conteudo">
-            <div><h2>Câmara de Comércio de Curitiba</h2><p>Curitiba, Paraná - Brasil</p><p>Conectando empresas e fortalecendo negócios locais.</p></div>
-            <div class="contato"><p>contato@camaracuritiba.com.br</p><p>(41) 3000-0000</p><p>Curitiba - PR</p></div>
+            <div>
+                <h2>Câmara de Comércio de Curitiba</h2>
+                <p>Curitiba, Paraná - Brasil</p>
+                <p>Conectando empresas e fortalecendo negócios locais.</p>
+            </div>
+
+            <div class="contato">
+                <p>contato@camaracuritiba.com.br</p>
+                <p>(41) 3000-0000</p>
+                <p>Curitiba - PR</p>
+            </div>
         </div>
+
         <div class="redes-sociais">
             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
+
         <p>© <span id="anoAtual"></span> Câmara de Comércio de Curitiba</p>
         <p>Josimar de Paula | WDD 231</p>
         <p id="ultimaModificacao"></p>
     </footer>
 </body>
+
 </html>
