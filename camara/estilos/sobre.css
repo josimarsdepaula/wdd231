@@ -1,0 +1,29 @@
+.introducao-sobre { max-width: 68ch; margin-bottom: 1rem; }
+.mensagem-visita { margin-bottom: 1.5rem; padding: 1rem; border-left: 4px solid var(--azul-principal); background: var(--azul-claro); border-radius: 4px; }
+.galeria-sobre { display: grid; gap: 1rem; grid-template-columns: minmax(0, 1fr); grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h"; }
+.area-1 { grid-area: a; } .area-2 { grid-area: b; } .area-3 { grid-area: c; } .area-4 { grid-area: d; }
+.area-5 { grid-area: e; } .area-6 { grid-area: f; } .area-7 { grid-area: g; } .area-8 { grid-area: h; }
+.cartao-sobre { min-width: 0; padding: 1rem; background: var(--branco); border: 1px solid var(--borda); border-radius: 8px; box-shadow: 0 2px 8px var(--sombra-card); }
+.cartao-sobre h2 { color: var(--azul-principal); font-size: 1.25rem; margin-bottom: .75rem; }
+.cartao-sobre figure { margin: 0 0 .75rem; overflow: hidden; border-radius: 6px; }
+.cartao-sobre img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+.cartao-sobre address { margin-bottom: .75rem; font-style: normal; font-weight: 700; }
+.cartao-sobre p { margin-bottom: .75rem; }
+.cartao-sobre button { padding: .65rem 1rem; background: var(--azul-principal); color: var(--branco); border: 0; border-radius: 5px; font: inherit; cursor: pointer; }
+.cartao-sobre button:hover, .cartao-sobre button:focus-visible { background: var(--azul-escuro); }
+.cartao-sobre div[hidden] { display: none; }
+.cartao-sobre div { margin-top: .75rem; }
+.cartao-sobre div a, .creditos-sobre a { color: var(--azul-principal); }
+.creditos-sobre { margin-top: 2rem; font-size: .875rem; }
+.creditos-sobre h2 { font-size: 1.1rem; margin-bottom: .5rem; }
+.creditos-sobre ul { margin: .5rem 0 0 1.2rem; }
+@media (min-width: 641px) {
+    .galeria-sobre { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-areas: "a b" "c d" "e f" "g h"; }
+    .cartao-sobre img { transition: transform .25s ease, filter .25s ease; }
+    .cartao-sobre figure:hover img { transform: scale(1.04); filter: saturate(1.15); }
+}
+@media (min-width: 1025px) {
+    .galeria-sobre { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-areas: "a a b" "c d e" "f g h"; }
+    .area-1 img { max-height: 270px; }
+}
+@media (prefers-reduced-motion: reduce) { .cartao-sobre img { transition: none; } }

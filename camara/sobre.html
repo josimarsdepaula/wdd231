@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="estilos/reset.css">
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
     <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <link rel="stylesheet" href="estilos/sobre.css">
     <script src="scripts/paginas.js" defer></script>
+    <script src="scripts/sobre.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -31,16 +33,18 @@
             <a href="index.html">Início</a>
             <a href="diretorio.html">Diretório</a>
             <a href="sobre.html" class="ativo" aria-current="page">Sobre</a>
-            <a href="associar.html">Associe-se</a>
+            <a href="associacao.html">Associe-se</a>
         </nav>
     </header>
     <main>
-        <h1>Sobre a Câmara</h1>
-        <section class="evento">
-            <h2>Conectando negócios em Curitiba</h2>
-            <p>A Câmara de Comércio de Curitiba reúne empresas para incentivar parcerias, compartilhar experiências e fortalecer a comunidade local.</p>
-            <p>Conheça os negócios do nosso diretório e acompanhe os eventos na página inicial.</p>
-            <a class="botao-cta" href="diretorio.html">Conheça as empresas</a>
+        <h1>Sobre a Câmara e Curitiba</h1>
+        <p class="introducao-sobre">Parques, arquitetura, cultura e comércio fazem parte da vida na capital paranaense. Explore oito lugares para conhecer a cidade.</p>
+        <aside id="mensagem-visita" class="mensagem-visita" aria-live="polite"></aside>
+        <section class="galeria-sobre" aria-label="Lugares de interesse em Curitiba" id="galeria-sobre"></section>
+        <section class="creditos-sobre" aria-labelledby="titulo-creditos">
+            <h2 id="titulo-creditos">Fontes e créditos das imagens</h2>
+            <p>Informações dos locais: Instituto Municipal de Turismo de Curitiba. Fotografias: Wikimedia Commons, recortadas e convertidas para WebP.</p>
+            <ul id="lista-creditos"></ul>
         </section>
     </main>
     <footer>
