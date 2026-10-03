@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Confira os dados do seu formulário de associação à Câmara de Comércio de Curitiba.">
+    <meta name="author" content="Josimar de Paula">
+
+    <meta property="og:title" content="Câmara de Comércio de Curitiba | Agradecimento">
+    <meta property="og:description" content="Confira os dados do seu formulário de associação à Câmara de Comércio de Curitiba.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://josimarsdepaula.github.io/wdd231/camara/imagens/hero.webp">
+    <meta property="og:url" content="https://josimarsdepaula.github.io/wdd231/camara/agradecimento.html">
+
+    <title>Câmara de Comércio de Curitiba | Agradecimento</title>
+
+    <link rel="icon" href="imagens/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <link rel="stylesheet" href="estilos/associacao.css">
+    <script src="scripts/paginas.js" defer></script>
+    <script src="scripts/agradecimento.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <a href="index.html" class="logo">
+                <img src="imagens/logo.svg" alt="Logo da Câmara de Comércio de Curitiba">
+            </a>
+
+            <div class="nome-site">
+                <strong>Câmara de Comércio</strong>
+                <span>Curitiba - Paraná</span>
+            </div>
+
+            <button id="menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="navegacao">
+                ☰
+            </button>
+        </div>
+
+        <nav id="navegacao">
+            <a href="index.html">Início</a>
+            <a href="diretorio.html">Diretório</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="associacao.html">Associe-se</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Obrigado pela sua solicitação!</h1>
+        <section class="confirmacao">
+            <h2>Dados da solicitação</h2>
+            <p id="mensagem-confirmacao">Obrigado por preencher o formulário de associação. Confira abaixo os dados informados.</p>
+            <dl>
+                <dt>Nome</dt><dd id="resumo-nome"></dd>
+                <dt>Sobrenome</dt><dd id="resumo-sobrenome"></dd>
+                <dt>E-mail</dt><dd id="resumo-email"></dd>
+                <dt>Número de celular</dt><dd id="resumo-telefone"></dd>
+                <dt>Empresa ou organização</dt><dd id="resumo-organizacao"></dd>
+                <dt>Data e hora de preenchimento</dt><dd id="resumo-timestamp"></dd>
+            </dl>
+            <a href="associacao.html" class="botao-cta">Voltar ao formulário</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape-conteudo">
+            <div>
+                <h2>Câmara de Comércio de Curitiba</h2>
+                <p>Curitiba, Paraná - Brasil</p>
+                <p>Conectando empresas e fortalecendo negócios locais.</p>
+            </div>
+
+            <div class="contato">
+                <p>contato@camaracuritiba.com.br</p>
+                <p>(41) 3000-0000</p>
+                <p>Curitiba - PR</p>
+            </div>
+        </div>
+
+        <div class="redes-sociais">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+
+        <p>© <span id="anoAtual"></span> Câmara de Comércio de Curitiba</p>
+        <p>Josimar de Paula | WDD 231</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+.conteudo-associacao {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+}
+
+.formulario-associacao,
+.cartao-nivel,
+.confirmacao {
+    min-width: 0;
+    padding: 1.5rem;
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--sombra-card);
+}
+
+.formulario-associacao h2,
+.niveis-associacao h2,
+.confirmacao h2 {
+    margin-bottom: 1rem;
+    color: var(--azul-principal);
+}
+
+.formulario-associacao label {
+    display: block;
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+.formulario-associacao input:not([type="hidden"]),
+.formulario-associacao select,
+.formulario-associacao textarea {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    margin-top: .4rem;
+    padding: .65rem;
+    border: 1px solid var(--cinza);
+    border-radius: 5px;
+    background: var(--branco);
+    color: var(--texto);
+    font-weight: 400;
+}
+
+.formulario-associacao textarea { resize: vertical; }
+.formulario-associacao small { display: block; font-weight: 400; }
+
+.formulario-associacao button,
+.cartao-nivel button,
+dialog button {
+    min-height: 44px;
+    padding: .65rem 1.2rem;
+    border: 1px solid var(--azul-principal);
+    border-radius: 5px;
+    color: var(--branco);
+    background: var(--azul-principal);
+    cursor: pointer;
+}
+
+:focus-visible { outline: 3px solid #986000; outline-offset: 3px; }
+.cartao-nivel { margin-bottom: 1rem; animation: entrada-cartao .7s ease-out both; }
+.cartao-nivel:nth-of-type(2) { animation-delay: .1s; }
+.cartao-nivel:nth-of-type(3) { animation-delay: .2s; }
+.cartao-nivel:nth-of-type(4) { animation-delay: .3s; }
+.cartao-nivel h3 { color: var(--azul-principal); }
+.cartao-nivel p { margin: .5rem 0 1rem; }
+
+dialog {
+    margin: auto;
+    width: min(90%, 480px);
+    max-height: 85vh;
+    overflow: auto;
+    padding: 1.5rem;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    color: var(--texto);
+    background: var(--branco);
+}
+
+dialog::backdrop { background: #172033b3; }
+dialog h2 { color: var(--azul-principal); }
+dialog p { margin: 1rem 0; }
+dialog ul { padding-left: 1.5rem; margin: 1rem 0; }
+dialog li + li { margin-top: .5rem; }
+.confirmacao dl { margin-top: 1.5rem; }
+.confirmacao dt { font-weight: 700; color: var(--azul-principal); }
+.confirmacao dd { margin-bottom: 1rem; }
+
+@keyframes entrada-cartao {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (min-width: 48rem) {
+    .conteudo-associacao { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); align-items: start; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cartao-nivel { animation: none; }
+}
