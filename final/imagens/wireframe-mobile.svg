@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 790" role="img" aria-labelledby="titulo desc">
+<title id="titulo">Wireframe móvel da página inicial</title><desc id="desc">Esboço em preto e branco da página inicial em uma coluna.</desc>
+<rect width="360" height="790" fill="#fff"/><g fill="none" stroke="#111" stroke-width="2">
+<rect x="12" y="12" width="336" height="66"/><rect x="274" y="29" width="56" height="32"/>
+<rect x="12" y="94" width="336" height="174"/><rect x="28" y="212" width="132" height="34"/>
+<rect x="12" y="286" width="336" height="210"/><rect x="28" y="327" width="304" height="46"/><rect x="28" y="382" width="304" height="46"/><rect x="28" y="437" width="304" height="46"/>
+<rect x="12" y="514" width="336" height="190"/><rect x="28" y="556" width="304" height="60"/><rect x="28" y="626" width="304" height="60"/>
+<rect x="12" y="722" width="336" height="54"/>
+</g><g fill="#111" font-family="Arial,sans-serif" font-size="14">
+<text x="27" y="49">CodeCase</text><text x="288" y="51">☰</text>
+<text x="28" y="126">Soluções digitais para sua empresa</text><text x="28" y="153">Resumo do valor oferecido</text><text x="48" y="234">Conhecer soluções</text>
+<text x="28" y="311">Serviços</text><text x="40" y="355">Criação de sites</text><text x="40" y="410">Automação</text><text x="40" y="465">Soluções digitais</text>
+<text x="28" y="540">Soluções em destaque</text><text x="40" y="591">Exemplo 1</text><text x="40" y="661">Exemplo 2</text><text x="28" y="754">Rodapé</text>
+</g></svg>

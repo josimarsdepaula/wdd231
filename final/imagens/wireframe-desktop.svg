@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 690" role="img" aria-labelledby="titulo desc">
+<title id="titulo">Wireframe largo da página inicial</title><desc id="desc">Esboço em preto e branco com navegação horizontal e seções em colunas.</desc>
+<rect width="980" height="690" fill="#fff"/><g fill="none" stroke="#111" stroke-width="2">
+<rect x="15" y="15" width="950" height="66"/><rect x="600" y="29" width="350" height="38"/>
+<rect x="15" y="99" width="950" height="230"/><rect x="40" y="253" width="180" height="43"/><rect x="530" y="117" width="410" height="194"/>
+<rect x="15" y="347" width="950" height="157"/><rect x="30" y="383" width="296" height="105"/><rect x="342" y="383" width="296" height="105"/><rect x="654" y="383" width="296" height="105"/>
+<rect x="15" y="522" width="950" height="102"/><rect x="30" y="560" width="296" height="49"/><rect x="342" y="560" width="296" height="49"/><rect x="654" y="560" width="296" height="49"/>
+<rect x="15" y="642" width="950" height="33"/>
+</g><g fill="#111" font-family="Arial,sans-serif" font-size="18">
+<text x="33" y="56">CodeCase Technology</text><text x="624" y="54">Início   Serviços   Soluções</text>
+<text x="41" y="147">Soluções digitais para</text><text x="41" y="175">sua pequena empresa</text><text x="41" y="209">Resumo da proposta</text><text x="62" y="280">Conhecer soluções</text><text x="682" y="220">Imagem principal</text>
+<text x="30" y="373">Serviços</text><text x="60" y="445">Criação de sites</text><text x="415" y="445">Automação</text><text x="710" y="445">Soluções digitais</text>
+<text x="30" y="549">Soluções em destaque</text><text x="110" y="592">Exemplo 1</text><text x="420" y="592">Exemplo 2</text><text x="725" y="592">Exemplo 3</text><text x="33" y="665">Rodapé</text>
+</g></svg>

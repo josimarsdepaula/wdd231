@@ -1,0 +1,41 @@
+* { box-sizing: border-box; }
+:root { --azul: #102A43; --verde: #007C83; --claro: #F5F8FB; --grafite: #1F2937; --borda: #C9D4DE; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--claro); color: var(--grafite); font: 400 1rem/1.65 "Inter", Arial, sans-serif; }
+.largura { width: min(100% - 2rem, 1050px); margin-inline: auto; }
+.cabecalho, footer { background: var(--azul); color: #fff; }
+.cabecalho { padding: 1.2rem 0; }
+.marca { margin: 0; font: 700 1.45rem/1.2 "Space Grotesk", Arial, sans-serif; }
+.marca span { color: #8BE4E0; }
+.tipo-documento { margin: .4rem 0 0; font-size: .9rem; }
+main { padding-block: 2rem 3rem; }
+h1, h2, h3 { color: var(--azul); font-family: "Space Grotesk", Arial, sans-serif; line-height: 1.25; }
+h1 { margin: 0 0 1rem; font-size: clamp(2rem, 5vw, 3rem); }
+h2 { margin: 0 0 .9rem; font-size: 1.55rem; }
+h3 { margin: 1.1rem 0 .35rem; font-size: 1.1rem; }
+p { margin: .5rem 0 1rem; }
+.abertura { max-width: 70ch; font-size: 1.1rem; }
+section { margin-top: 1.5rem; padding: 1.4rem; background: #fff; border: 1px solid var(--borda); border-radius: 10px; }
+ul, ol { padding-left: 1.5rem; }
+li { margin-bottom: .55rem; }
+.nota { padding: .75rem 1rem; border-left: 4px solid var(--verde); background: var(--claro); }
+.paleta { display: grid; gap: .75rem; }
+.cor { display: flex; align-items: center; gap: 1rem; padding: .6rem; border: 1px solid var(--borda); border-radius: 6px; }
+.cor p { margin: .1rem 0 0; }
+.amostra { display: block; width: 56px; height: 56px; flex: none; border: 1px solid var(--borda); border-radius: 4px; }
+.azul { background: var(--azul); } .verde { background: var(--verde); } .claro { background: var(--claro); } .grafite { background: var(--grafite); }
+.tipos { display: grid; gap: 1rem; }
+.tipos > div { padding: .5rem 1rem; border-left: 3px solid var(--verde); }
+.exemplo-titulo { font-family: "Space Grotesk", Arial, sans-serif; font-size: 1.6rem; }
+.exemplo-corpo { font-family: "Inter", Arial, sans-serif; font-size: 1.4rem; }
+.wireframes { display: grid; gap: 1.5rem; align-items: start; }
+figure { margin: 0; }
+figure img { display: block; width: 100%; height: auto; border: 1px solid var(--borda); background: #fff; }
+figcaption { padding-top: .5rem; font-size: .9rem; }
+code { padding: .1rem .3rem; background: #EAF1F4; border-radius: 3px; }
+footer { padding: 1rem 0; font-size: .9rem; }
+footer p { margin: 0; }
+@media (min-width: 700px) {
+    .paleta, .tipos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .wireframes { grid-template-columns: minmax(0, 310px) minmax(0, 1fr); }
+}
